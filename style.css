@@ -39,3 +39,11 @@ body {
     display: inline-block;
 }
 
+.clock:after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+}
