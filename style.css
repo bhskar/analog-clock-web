@@ -5,11 +5,10 @@
     padding: 0;
 }
 
-body
-{
+body {
     font-family: Poppins, sans-serif;
     background: rgb(34,193,195);
-    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,212,45,1) 100%); 
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgb(254, 221, 88) 100%); 
     position: relative;
     display: flex;
     justify-content: center;
@@ -17,8 +16,7 @@ body
     height: 100vh;
 }
 
-.clock
-{
+.clock {
     background-color: rgb(49, 47, 47);
     width: 300px;
     height: 300px;
@@ -27,3 +25,17 @@ body
     border: 5px solid hsl(0, 0%, 100%);
     box-shadow: 0px 0px 10px rgba(255,255,255,0.7), 0px 0px 20px rgba(0,0,0,0.7);
 }
+
+.clock ul li {
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 5px;
+}
+
+.clock ul li span {
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+}
+
